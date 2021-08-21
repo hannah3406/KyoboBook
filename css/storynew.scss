@@ -189,6 +189,7 @@ body{
                             padding: 5px 5px 5px 10px;
                             font-size: 14px;
                             color: #515151;
+                            z-index:999;
                         }
                     }
                 }
@@ -255,6 +256,7 @@ body{
             .item_detail{
                 width:50%;
                 position:relative;
+                display:block;
                 @include flex;
                 .ckbox{position:absolute;top:3px;left:2px;width:20%;transform:scale(1.2);}
                 .item_detail_book{

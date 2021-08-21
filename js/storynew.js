@@ -3,10 +3,28 @@ srchFirst.addEventListener('click',function(){
     this.classList.toggle('on');
 })
 
+const elLi1 = document.querySelectorAll('.list-srch1 li');
+const btnSrch1 = document.querySelector('.btn-slt1');
+
+for(let i=0;i<elLi1.length;i++){
+    elLi1[i].addEventListener('click',function(){
+        btnSrch1.value = this.textContent;
+    })
+}
+
 //상품별 selectBox
 SelectBox.addEventListener('click',function(){
     this.classList.toggle('on');
 })
+
+const elLi2 = document.querySelectorAll('.list-srch2 li');
+const btnSrch2 = document.querySelector('.btn-slt2');
+
+for(let i=0;i<elLi2.length;i++){
+    elLi2[i].addEventListener('click',function(){
+        btnSrch2.value = this.textContent;
+    })
+}
 
 //json 파일
 fetch('js/storyBook.json')
@@ -45,6 +63,25 @@ fetch('js/storyBook.json')
                 `
             });
             StoryList.innerHTML = msg;
+            
+            const itemDetail = document.querySelectorAll('.item_detail');
+            const itemBook = document.querySelectorAll('.Bookimg > span');
+
+            Select3.addEventListener('click',function(e){
+                // e.preventDefault();
+                idx=0;
+            for(let i=0;i<itemBook.length;i++){
+                filter = btnSrch2.value.toUpperCase();
+                booktype = itemBook[i].textContent;
+
+                if(booktype.toUpperCase().indexOf(filter) > -1){
+                    itemDetail[i].style.display = "";
+                }else{
+                    itemDetail[i].style.display = "none";
+                    }
+                }
+            })
+
 
         //관심상품 클릭
         const elBtn = document.querySelector('.btn01');

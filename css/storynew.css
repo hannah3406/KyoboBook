@@ -677,6 +677,7 @@ body main .storyMarket_li .listSrchSecond .SelectBox .Select2 > li {
   padding: 5px 5px 5px 10px;
   font-size: 14px;
   color: #515151;
+  z-index: 999;
 }
 
 body main .storyMarket_li .listSrchSecond .SelectBox.on .Select2 {
@@ -761,6 +762,7 @@ body main .storyMarket_item {
 body main .storyMarket_item .item_detail {
   width: 50%;
   position: relative;
+  display: block;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
