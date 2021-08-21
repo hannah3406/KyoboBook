@@ -1,0 +1,100 @@
+{
+"Book":[
+    {
+        "BookType":"종이책",
+        "color":"yellowBook",
+        "genre":"드라마",
+        "author":"이서현",
+        "strong":"펑",
+        "detail":"평범한 가정에 어느 날 사제폭탄이 배달되고, 무료..."
+    },
+    {
+        "BookType":"종이책",
+        "color":"yellowBook",
+        "genre":"저학년 동화",
+        "author":"키키유",
+        "strong":"바다 청소봇 씨싹",
+        "detail":"자신을 아이돌 로봇으로 착각하는 바다청소 로봇"
+    },
+    {
+        "BookType":"eBook",
+        "color":"blueBook",
+        "genre":"역사",
+        "author":"구태",
+        "strong":"황궁아래 덫",
+        "detail":"짐은 덫을 놓을 생각입니다. 황궁을 덮는 덫을 놓..."
+    },
+    {
+        "BookType":"종이책",
+        "color":"yellowBook",
+        "genre":"미스테리",
+        "author":"김재석",
+        "strong":"설공찬이",
+        "detail":"조선 최초의 금서(禁書), 잃어버린 베스트셀..."
+    },
+    {
+        "BookType":"미출간",
+        "color":"grayBook",
+        "genre":"로맨스",
+        "author":"달달한 수박",
+        "strong":"애청자라 사심을 드릉드릉",
+        "detail":"K막장극에 처박혔다! 옥구슬 작가님 전화 좀 받..."
+    },
+    {
+        "BookType":"eBook",
+        "color":"blueBook",
+        "genre":"로맨스",
+        "author":"청종",
+        "strong":"전설의 화석",
+        "detail":"마왕을 물리친 영웅이 꼭 해야할일이 '복학'? 아카..."
+    },
+    {
+        "BookType":"종이책",
+        "color":"yellowBook",
+        "genre":"추리",
+        "author":"신세연",
+        "strong":"피는 솔직하다",
+        "detail":"아무도 타인의 사연을 궁금해하지 않는다"
+    },
+    {
+        "BookType":"웹소설",
+        "color":"redBook",
+        "genre":"로맨스",
+        "author":"베시",
+        "strong":"황제에게 하트를...",
+        "detail":"읽던 소설 속으로 빙의한 여주인공, 그녀는 과연..."
+    },
+    {
+        "BookType":"종이책",
+        "color":"yellowBook",
+        "genre":"고학년 동화",
+        "author":"임지현",
+        "strong":"수상한 캠핑카",
+        "detail":"22년 할부로 캠핑카를 장만한 귀신 전문 작가를..."
+    },
+    {
+        "BookType":"웹소설",
+        "color":"redBook",
+        "genre":"드라마",
+        "author":"박선미",
+        "strong":"귀촌가족",
+        "detail":"서울에서 귀촌한 한 가족과 어쩐지 수상한 시골 사..."
+    },
+    {
+        "BookType":"미출간",
+        "color":"grayBook",
+        "genre":"로맨스",
+        "author":"윤살구",
+        "strong":"바다에서 온 사람",
+        "detail":"뭍사람과 사랑에 빠진 후 로맨스의 찰나가 지나가고,"
+    },
+    {
+        "BookType":"eBook",
+        "color":"blueBook",
+        "genre":"드라마",
+        "author":"황성식",
+        "strong":"알프레드의 고양이",
+        "detail":"몰카 범죄 현장을 목격한 히키코모리 사건 해결..."
+    }
+]
+}

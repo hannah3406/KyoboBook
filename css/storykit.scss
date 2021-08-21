@@ -1,0 +1,308 @@
+@import "_common";
+@import "_mixin";
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+
+body{
+    main{
+        .content_category{
+            width:100%;
+            display: block;
+            height: 40px;
+            padding: 0 15px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+            >ul{
+                width:60%;
+                @include flex;
+                >li{
+                    >a{
+                        display: inline-block;
+                        position: relative;
+                        max-width: 142px;
+                        height: 39px;
+                        padding: 0 30px 0 10px;
+                        background: url(../img/bg_mheader.png) 100% 50% no-repeat;
+                        background-size: 50px auto;
+                        font-weight: bold;
+                        font-size: 17px;
+                        line-height: 40px;
+                        letter-spacing: -1px;
+                        white-space: nowrap;
+                        word-wrap: normal;
+                        word-break: break-all;
+                        text-overflow: ellipsis;
+                        cursor: pointer;
+                        color: #222;
+                    }
+                }
+            }
+        }
+        .market_taglist{
+            padding: 10px;
+            >span{
+                background-color: #fff;
+                margin-right: 5px;
+                display: inline-block;
+                margin-bottom: 3px;
+                text-align: center;
+                padding: 3px 10px 0;
+                border-radius: 15px;
+                height: 23px;
+                border: 1px solid #518ddd;
+                font-size: 13px;
+                color: #518ddd;
+                line-height: 1;
+            }
+        }
+        .storyMarket_li{
+            position: relative;
+            width: 100%;
+            border-bottom: 1px solid #f2f2f3;
+            .listSrchFirst{
+                @include flex;
+                width:93%;
+                height: 30px;
+                margin:0 auto;
+                .Search1{
+                    position:relative;
+                    width:24%;
+                    height: 30px;
+                    >input{
+                        width: 100%;
+                        height: 100%;
+                        padding: 0 10px;
+                        border: 1px solid #ddd;
+                        border-right: 0 !important;
+                        background: url(../img/ico_arrow_d_2.png) no-repeat right 50%;
+                        font-size: 14px;
+                        color: #515151;
+                        letter-spacing: -.25px;
+                        text-align: left;
+                        cursor: pointer;
+                    }
+                    .list-srch{
+                        display:none;
+                        position:absolute;
+                        top: 30px;
+                        left: 0;
+                        width: 100%;
+                        margin-top: -1px;
+                        border: 1px solid #ddd;
+                        border-top: none;
+                        background-color: #fff;
+                        z-index:999;
+                        >li{
+                            display: block;
+                            padding: 5px 5px 5px 10px;
+                            font-size: 14px;
+                            color: #515151;
+                            z-index:999;
+                        }
+                    }
+                }
+                .Search1.on{
+                    .list-srch{
+                        display:block;
+                        position:absolute;
+                        top: 30px;
+                        left: 0;
+                        width: 100%;
+                        margin-top: -1px;
+                        border: 1px solid #ddd;
+                        border-top: none;
+                        background-color: #fff;
+                        >li{
+                            display: block;
+                            padding: 5px 5px 5px 10px;
+                            font-size: 14px;
+                            color: #515151;
+                        }
+                    }
+                }
+                .Search2{
+                    width:60%;
+                    margin-right:2%;
+                    display: block;
+                    height: 100%;
+                    height: 30px;
+                    padding: 0 10px;
+                    border: none;
+                    background-color: #fff;
+                    line-height: 27px;
+                    border: 1px solid #ddd;
+                }
+                .Search3{
+                    width:13%;
+                    height:100%;
+                    background-color: #fff;
+                    color: #2b2b2b;
+                    display:inline-block;
+                    border: 2px solid #2b2b2b;
+                    font-weight: bold;
+                    text-align: center;
+                    vertical-align: middle;
+                    white-space: nowrap;
+                    height: 30px;
+                }
+            }
+            .listSrchSecond{
+                @include flex;
+                width:93%;
+                height: 30px;
+                margin:5px auto;
+                margin-bottom:10px;
+                .SelectBox{
+                    position:relative;
+                    width: 84.5%;
+                    height: 100%;
+                    padding: 0 10px;
+                    border: 1px solid #ddd;
+                    background: url(../img/ico_arrow_d_2.png) no-repeat right 50%;
+                    .Select1{
+                        width: 100%;
+                        height: 100%;
+                        font-size: 14px;
+                        color: #515151;
+                        letter-spacing: -.25px;
+                        text-align: left;
+                        cursor: pointer;
+                        border:none;
+                        outline: none;
+                        background-color: #fff;
+                    }
+                    .Select2{
+                        display:none;
+                        position:absolute;
+                        top: 30px;
+                        left: 0;
+                        width: 100%;
+                        margin-top: -1px;
+                        border: 1px solid #ddd;
+                        border-top: none;
+                        background-color: #fff;
+                        >li{
+                            display: block;
+                            width: 100%;
+                            padding: 5px 5px 5px 10px;
+                            font-size: 14px;
+                            color: #515151;
+                        }
+                    }
+                }
+                .SelectBox.on{
+                    .Select2{
+                        display:block;
+                    }
+                }
+                .Select3{
+                    width:13%;
+                    height:100%;
+                    background-color: #fff;
+                    color: #2b2b2b;
+                    display:inline-block;
+                    border: 2px solid #2b2b2b;
+                    font-weight: bold;
+                    text-align: center;
+                    vertical-align: middle;
+                    white-space: nowrap;
+                    height: 30px;
+                }
+            }
+        }
+        .storyMarket_li_hd_all{
+            .storyMarket_li_hd{
+                @include flex;
+                width:93%;
+                margin:10px auto;
+                .btn01{
+                    cursor: pointer;
+                    width:49%;
+                    border: 2px solid #464646;
+                    color: #464646;
+                    text-align: center;
+                    display: block;
+                    height: 35px;
+                    padding-top: 7px;
+                    font-size: 16px;
+                }
+                .btn02{
+                    cursor: pointer;
+                    width:49%;
+                    border: 2px solid #f05430;
+                    color: #f05430;
+                    text-align: center;
+                    display: block;
+                    height: 35px;
+                    padding-top: 7px;
+                    font-size: 16px;;
+                }
+            }
+            .txt_nt{
+                font-size: 14px;
+                color: #333;
+                padding:0 10px 10px 15px;
+                text-align:left;
+            }
+        }
+        .storyMarket_item{
+            @include flex;
+            flex-wrap: wrap;
+            width:93%;
+            margin:0 auto;
+            .item_detail{
+                width:50%;
+                position:relative;
+                @include flex;
+                .ckbox{position:absolute;top:3px;left:2px;width:20%;transform:scale(1.2);}
+                .item_detail_book{
+                    width:80%;                    
+                    position:relative;
+                    margin-left:20%;
+                    .Bookimg{
+                        width:100%;
+                        position:relative;
+                        .colorBook{
+                            position:absolute;top:0;left:0;
+                            padding: 0 5px;
+                            height: 21px;
+                            color: #fff;
+                            font-size: 13px;
+                        }
+                        .yellowBook{background-color: #e6b41c;}
+                        .blueBook{background-color: #6275ea;}
+                        .grayBook{background-color: #818181;}
+                        .redBook{background-color: #d0504d;}
+                        >img{width:100%;}
+                        >p{
+                            line-height:1.5;
+                            position:absolute;bottom:0;left:0;
+                            width:100%;
+                            height:25%;
+                            padding:8px;
+                            background-color:rgba(0,0,0,0.7);
+                            display:block;
+                            color: #fff;
+                            font-size: 13px;
+                            font-weight:300;
+                            
+                            >strong{display:block; color: #fae823;font-weight:400;}
+                        }
+                    }
+                    .Booktxt{
+                        margin-top:8px;
+                        margin-bottom:20px;
+                        p{
+                            font-size:13px;
+                            color: #6b6b6b;
+                            line-height:1.5;
+                            strong{color: #333;display:block;text-align:center;}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
