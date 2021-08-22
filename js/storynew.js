@@ -66,13 +66,46 @@ fetch('js/storyBook.json')
             
             const itemDetail = document.querySelectorAll('.item_detail');
             const itemBook = document.querySelectorAll('.Bookimg > span');
+            const bookTit = document.querySelectorAll('.Booktxt > p strong');
+            const bookAuthor = document.querySelectorAll('.Bookimg > p');
+            console.log(bookTit);
+            //search 필터링
+            let search = document.querySelector('.Search2');
 
+            Search3.addEventListener('click',function(){
+                if(btnSrch1.value=='제목'){
+                    for(let i=0;i<itemDetail.length;i++){
+                        srch = search.value.toUpperCase();
+                        tit = bookTit[i].textContent;
+
+                        if(tit.toUpperCase().indexOf(srch) > -1){
+                            itemDetail[i].style.display = "";
+                        }else{
+                            itemDetail[i].style.display = "none";
+                            }
+                        }
+                }else{
+                    for(let i=0;i<itemDetail.length;i++){
+                        srch = search.value.toUpperCase();
+                        aut = bookAuthor[i].textContent;
+
+                        if(aut.toUpperCase().indexOf(srch) > -1){
+                            itemDetail[i].style.display = "";
+                        }else{
+                            itemDetail[i].style.display = "none";
+                            }
+                    }
+                }
+            })
+
+            //select 필터링
             Select3.addEventListener('click',function(e){
-                // e.preventDefault();
-                idx=0;
             for(let i=0;i<itemBook.length;i++){
                 filter = btnSrch2.value.toUpperCase();
                 booktype = itemBook[i].textContent;
+                if(btnSrch2.value=='상품별 | 전체'){
+                    location.reload(true); 
+                }
 
                 if(booktype.toUpperCase().indexOf(filter) > -1){
                     itemDetail[i].style.display = "";
