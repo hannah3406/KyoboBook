@@ -42,10 +42,10 @@
                         // overflow: auto;
                         overflow-x: auto;
                         width: 100%;
-                        height:100%;
+                        height: 40px;
                         white-space: nowrap;
                         text-align: center;
-                        padding: 0 15px;
+                        padding: 1px 15px;
                         box-sizing: border-box;
                         @include flex;
                         >li{
@@ -54,7 +54,7 @@
                             color: #333;
                             font-size: 15px;
                             text-align: center;
-                            height: 40px;
+                            height: 100%;
                             line-height: 40px;
                             font-weight: bold;
                         }
@@ -65,10 +65,10 @@
                             color: #333;
                             font-size: 15px;
                             text-align: center;
-                            height: 40px;
+                            height: 37px;
                             line-height: 2;
                             font-weight: bold;
-                            background-color:#f6f7f9;color:red;
+                            color:red;
                             }
                         }
                     }
